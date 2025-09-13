@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arab GDPS Demonlist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap');
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+        .demon-card {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            border-left: 4px solid #3b82f6;
+            transition: all 0.3s ease;
+        }
+        .demon-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(30, 41, 59, 0.5);
+        }
+        .rank-badge {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .unrated-badge {
+            background: linear-gradient(135deg, #64748b 0%, #475569 100%);
+        }
+        .victor-icon {
+            color: #10b981;
+        }
+        .no-victor {
+            color: #64748b;
+        }
+        .header-bg {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <header class="header-bg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i data-feather="award" class="text-blue-500"></i>
+                    <h1 class="text-2xl font-bold">Arab GDPS Demonlist</h1>
+                </div>
+                <nav>
+                    <ul class="flex space-x-6">
+                        <li><a href="#" class="hover:text-blue-400 transition">Home</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition">About</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition">Submit</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <div class="text-center mb-12" data-aos="fade-up">
+            <h2 class="text-4xl font-bold mb-4">Top Demons</h2>
+            <p class="text-lg text-slate-300 max-w-2xl mx-auto">
+                The most difficult levels in Arab GDPS, ranked by their difficulty.
+            </p>
+        </div>
+
+        <div class="grid gap-6 max-w-4xl mx-auto">
+            <!-- Demon 1 -->
+            <div class="demon-card rounded-lg p-6 flex flex-col md:flex-row items-start md:items-center gap-6" data-aos="fade-up">
+                <div class="rank-badge w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold">
+                    1
+                </div>
+                <div class="flex-1">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+                        <h3 class="text-xl font-bold">Spongebob Circles</h3>
+                        <span class="text-sm text-slate-400">by Phfoxy</span>
+                    </div>
+                    <div class="mt-4 flex items-center">
+                        <i data-feather="users" class="no-victor mr-2"></i>
+                        <span class="text-slate-400">No Victors</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Demon 2 -->
+            <div class="demon-card rounded-lg p-6 flex flex-col md:flex-row items-start md:items-center gap-6" data-aos="fade-up">
+                <div class="rank-badge w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold">
+                    2
+                </div>
+                <div class="flex-1">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+                        <h3 class="text-xl font-bold">Worst Transformation</h3>
+                        <span class="text-sm text-slate-400">by Abso</span>
+                    </div>
+                    <div class="mt-4 flex items-center">
+                        <i data-feather="users" class="no-victor mr-2"></i>
+                        <span class="text-slate-400">No Victors</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Demon 3 -->
+            <div class="demon-card rounded-lg p-6 flex flex-col md:flex-row items-start md:items-center gap-6" data-aos="fade-up">
+                <div class="rank-badge w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold">
+                    3
+                </div>
+                <div class="flex-1">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+                        <h3 class="text-xl font-bold">Best Transformation</h3>
+                        <span class="text-sm text-slate-400">by Abso</span>
+                    </div>
+                    <div class="mt-4 flex items-center">
+                        <i data-feather="users" class="no-victor mr-2"></i>
+                        <span class="text-slate-400">No Victors</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Demon 4 -->
+            <div class="demon-card rounded-lg p-6 flex flex-col md:flex-row items-start md:items-center gap-6" data-aos="fade-up">
+                <div class="rank-badge w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold">
+                    4
+                </div>
+                <div class="flex-1">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+                        <h3 class="text-xl font-bold">Just an mc level</h3>
+                        <span class="text-sm text-slate-400">by Abso</span>
+                    </div>
+                    <div class="mt-4 flex items-center">
+                        <i data-feather="user-check" class="victor-icon mr-2"></i>
+                        <span>Elheslas 100%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Demon 5 -->
+            <div class="demon-card rounded-lg p-6 flex flex-col md:flex-row items-start md:items-center gap-6" data-aos="fade-up">
+                <div class="rank-badge w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold unrated-badge">
+                    5
+                </div>
+                <div class="flex-1">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+                        <h3 class="text-xl font-bold">Perfect jumps (unrated)</h3>
+                        <span class="text-sm text-slate-400">by hosam56</span>
+                    </div>
+                    <div class="mt-4 flex items-center">
+                        <i data-feather="users" class="no-victor mr-2"></i>
+                        <span class="text-slate-400">No Victors</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Demon 6 -->
+            <div class="demon-card rounded-lg p-6 flex flex-col md:flex-row items-start md:items-center gap-6" data-aos="fade-up">
+                <div class="rank-badge w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold">
+                    6
+                </div>
+                <div class="flex-1">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+                        <h3 class="text-xl font-bold">Demon</h3>
+                        <span class="text-sm text-slate-400">by hussein99b</span>
+                    </div>
+                    <div class="mt-4 flex items-center">
+                        <i data-feather="users" class="no-victor mr-2"></i>
+                        <span class="text-slate-400">No Victors</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Demon 7 -->
+            <div class="demon-card rounded-lg p-6 flex flex-col md:flex-row items-start md:items-center gap-6" data-aos="fade-up">
+                <div class="rank-badge w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold">
+                    7
+                </div>
+                <div class="flex-1">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+                        <h3 class="text-xl font-bold">unfair</h3>
+                        <span class="text-sm text-slate-400">by ag1</span>
+                    </div>
+                    <div class="mt-4 flex items-center">
+                        <i data-feather="users" class="no-victor mr-2"></i>
+                        <span class="text-slate-400">No Victors</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-slate-900 py-8 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="text-slate-400 hover:text-white transition">
+                    <i data-feather="twitter"></i>
+                </a>
+                <a href="#" class="text-slate-400 hover:text-white transition">
+                    <i data-feather="discord"></i>
+                </a>
+                <a href="#" class="text-slate-400 hover:text-white transition">
+                    <i data-feather="youtube"></i>
+                </a>
+            </div>
+            <p class="text-slate-400">
+                &copy; 2023 Arab GDPS Demonlist. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+    </script>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arab GDPS Demonlist</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;900&display=swap');
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #0f172a;
+            color: #f8fafc;
+        }
+        .demon-card {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            border-left: 4px solid #3b82f6;
+            transition: all 0.3s ease;
+        }
+        .demon-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(30, 41, 59, 0.5);
+        }
+        .rank-badge {
+            background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .unrated-badge {
+            background: linear-gradient(135deg, #64748b 0%, #475569 100%);
+        }
+        .victor-icon {
+            color: #10b981;
+        }
+        .no-victor {
+            color: #64748b;
+        }
+        .header-bg {
+            background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body class="min-h-screen">
+    <header class="header-bg sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4">
+            <div class="flex justify-between items-center">
+                <div class="flex items-center space-x-2">
+                    <i data-feather="award" class="text-blue-500"></i>
+                    <h1 class="text-2xl font-bold">Arab GDPS Demonlist</h1>
+                </div>
+                <nav>
+                    <ul class="flex space-x-6">
+                        <li><a href="#" class="hover:text-blue-400 transition">Home</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition">About</a></li>
+                        <li><a href="#" class="hover:text-blue-400 transition">Submit</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8">
+        <div class="text-center mb-12" data-aos="fade-up">
+            <h2 class="text-4xl font-bold mb-4">Top Demons</h2>
+            <p class="text-lg text-slate-300 max-w-2xl mx-auto">
+                The most difficult levels in Arab GDPS, ranked by their difficulty.
+            </p>
+        </div>
+
+        <div class="grid gap-6 max-w-4xl mx-auto">
+            <!-- Demon 1 -->
+            <div class="demon-card rounded-lg p-6 flex flex-col md:flex-row items-start md:items-center gap-6" data-aos="fade-up">
+                <div class="rank-badge w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold">
+                    1
+                </div>
+                <div class="flex-1">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+                        <h3 class="text-xl font-bold">Spongebob Circles</h3>
+                        <span class="text-sm text-slate-400">by Phfoxy</span>
+                    </div>
+                    <div class="mt-4 flex items-center">
+                        <i data-feather="users" class="no-victor mr-2"></i>
+                        <span class="text-slate-400">No Victors</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Demon 2 -->
+            <div class="demon-card rounded-lg p-6 flex flex-col md:flex-row items-start md:items-center gap-6" data-aos="fade-up">
+                <div class="rank-badge w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold">
+                    2
+                </div>
+                <div class="flex-1">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+                        <h3 class="text-xl font-bold">Worst Transformation</h3>
+                        <span class="text-sm text-slate-400">by Abso</span>
+                    </div>
+                    <div class="mt-4 flex items-center">
+                        <i data-feather="users" class="no-victor mr-2"></i>
+                        <span class="text-slate-400">No Victors</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Demon 3 -->
+            <div class="demon-card rounded-lg p-6 flex flex-col md:flex-row items-start md:items-center gap-6" data-aos="fade-up">
+                <div class="rank-badge w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold">
+                    3
+                </div>
+                <div class="flex-1">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+                        <h3 class="text-xl font-bold">Best Transformation</h3>
+                        <span class="text-sm text-slate-400">by Abso</span>
+                    </div>
+                    <div class="mt-4 flex items-center">
+                        <i data-feather="users" class="no-victor mr-2"></i>
+                        <span class="text-slate-400">No Victors</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Demon 4 -->
+            <div class="demon-card rounded-lg p-6 flex flex-col md:flex-row items-start md:items-center gap-6" data-aos="fade-up">
+                <div class="rank-badge w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold">
+                    4
+                </div>
+                <div class="flex-1">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+                        <h3 class="text-xl font-bold">Just an mc level</h3>
+                        <span class="text-sm text-slate-400">by Abso</span>
+                    </div>
+                    <div class="mt-4 flex items-center">
+                        <i data-feather="user-check" class="victor-icon mr-2"></i>
+                        <span>Elheslas 100%</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Demon 5 -->
+            <div class="demon-card rounded-lg p-6 flex flex-col md:flex-row items-start md:items-center gap-6" data-aos="fade-up">
+                <div class="rank-badge w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold unrated-badge">
+                    5
+                </div>
+                <div class="flex-1">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+                        <h3 class="text-xl font-bold">Perfect jumps (unrated)</h3>
+                        <span class="text-sm text-slate-400">by hosam56</span>
+                    </div>
+                    <div class="mt-4 flex items-center">
+                        <i data-feather="users" class="no-victor mr-2"></i>
+                        <span class="text-slate-400">No Victors</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Demon 6 -->
+            <div class="demon-card rounded-lg p-6 flex flex-col md:flex-row items-start md:items-center gap-6" data-aos="fade-up">
+                <div class="rank-badge w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold">
+                    6
+                </div>
+                <div class="flex-1">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+                        <h3 class="text-xl font-bold">Demon</h3>
+                        <span class="text-sm text-slate-400">by hussein99b</span>
+                    </div>
+                    <div class="mt-4 flex items-center">
+                        <i data-feather="users" class="no-victor mr-2"></i>
+                        <span class="text-slate-400">No Victors</span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Demon 7 -->
+            <div class="demon-card rounded-lg p-6 flex flex-col md:flex-row items-start md:items-center gap-6" data-aos="fade-up">
+                <div class="rank-badge w-16 h-16 rounded-full flex items-center justify-center text-2xl font-bold">
+                    7
+                </div>
+                <div class="flex-1">
+                    <div class="flex flex-col md:flex-row md:items-center md:justify-between gap-2">
+                        <h3 class="text-xl font-bold">unfair</h3>
+                        <span class="text-sm text-slate-400">by ag1</span>
+                    </div>
+                    <div class="mt-4 flex items-center">
+                        <i data-feather="users" class="no-victor mr-2"></i>
+                        <span class="text-slate-400">No Victors</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-slate-900 py-8 mt-12">
+        <div class="container mx-auto px-4 text-center">
+            <div class="flex justify-center space-x-6 mb-4">
+                <a href="#" class="text-slate-400 hover:text-white transition">
+                    <i data-feather="twitter"></i>
+                </a>
+                <a href="#" class="text-slate-400 hover:text-white transition">
+                    <i data-feather="discord"></i>
+                </a>
+                <a href="#" class="text-slate-400 hover:text-white transition">
+                    <i data-feather="youtube"></i>
+                </a>
+            </div>
+            <p class="text-slate-400">
+                &copy; 2023 Arab GDPS Demonlist. All rights reserved.
+            </p>
+        </div>
+    </footer>
+
+    <script>
+        AOS.init({
+            duration: 800,
+            easing: 'ease-in-out',
+            once: true
+        });
+        feather.replace();
+    </script>
+</body>
+</html>
